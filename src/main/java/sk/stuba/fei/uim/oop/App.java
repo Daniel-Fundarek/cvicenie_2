@@ -1,13 +1,14 @@
 package sk.stuba.fei.uim.oop;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class App {
     public static void main(String[] args) {
-
-     String a = "a";
-     String c = KeyboardInput.readString("zadaj text");
-     System.out.println("Compare strings "+ a.equals(c));
-     System.out.println("Compare strings better way "+ Objects.equals(a,c));
+        int[] x = new int[] {1,2,3};
+        int[] y = new int [3];
+        for (int i =0; i<y.length; i++)
+            y[i]=i+1;
+        System.out.println(Arrays.equals(x,y));
     }
 }
