@@ -5,10 +5,22 @@ import java.util.Objects;
 //Pointre funguju vo funkcii cize ked zmenim nieco v poli tak sa to prenesie do mainu
 public class App {
     public static void main(String[] args) {
-        vypis(1,5,0,39,57,5);
-    }
+    int a =7;
+    int b =7;
+    int x;
+    x = porovnaj(a,b);
+    System.out.println(x);
 
-    public static void vypis(int... pole){
-        System.out.println(Arrays.toString(pole));
-    }
+
+}
+static int porovnaj(int a, int b)
+{
+    if (a>b)
+        return 1;
+    else if (a<b)
+        return -1;
+    else
+        return 0;
+
+}
 }
